@@ -1,0 +1,9 @@
+D:\VSProjects\DirectoryWithMicroService\Common\RabbitMQEvent\bin\Debug\netcoreapp3.1\RabbitMQEvent.deps.json
+D:\VSProjects\DirectoryWithMicroService\Common\RabbitMQEvent\bin\Debug\netcoreapp3.1\RabbitMQEvent.dll
+D:\VSProjects\DirectoryWithMicroService\Common\RabbitMQEvent\obj\Debug\netcoreapp3.1\RabbitMQEvent.AssemblyInfoInputs.cache
+D:\VSProjects\DirectoryWithMicroService\Common\RabbitMQEvent\obj\Debug\netcoreapp3.1\RabbitMQEvent.AssemblyInfo.cs
+D:\VSProjects\DirectoryWithMicroService\Common\RabbitMQEvent\obj\Debug\netcoreapp3.1\RabbitMQEvent.csprojAssemblyReference.cache
+D:\VSProjects\DirectoryWithMicroService\Common\RabbitMQEvent\bin\Debug\netcoreapp3.1\RabbitMQEvent.pdb
+D:\VSProjects\DirectoryWithMicroService\Common\RabbitMQEvent\obj\Debug\netcoreapp3.1\RabbitMQEvent.csproj.CoreCompileInputs.cache
+D:\VSProjects\DirectoryWithMicroService\Common\RabbitMQEvent\obj\Debug\netcoreapp3.1\RabbitMQEvent.dll
+D:\VSProjects\DirectoryWithMicroService\Common\RabbitMQEvent\obj\Debug\netcoreapp3.1\RabbitMQEvent.pdb

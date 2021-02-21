@@ -1,0 +1,20 @@
+version: '3.4'
+
+services:
+    DirectoryMSDb:
+        image: mongo
+
+    rabbitmq:
+        image: rabbitmq:3-management-alpine
+
+    contact.api:
+        image: ${DOCKER_REGISTRY-}contactapi
+        build:
+            context: .
+            dockerfile: ContactService/Contact.API/Dockerfile
+
+    person.api:
+        image: ${DOCKER_REGISTRY-}personapi
+        build:
+            context: .
+            dockerfile: PersonService/Person.API/Dockerfile

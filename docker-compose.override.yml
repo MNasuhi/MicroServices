@@ -1,0 +1,45 @@
+version: '3.4'
+
+services:
+    DirectoryMSDb:
+        container_name: DirectoryMSDb
+        restart: always
+        volumes: 
+            - ${WEBAPP_STORAGE_HOME}/site:/data/db
+        ports: 
+            - "27017:27017"
+
+    rabbitmq:
+        container_name: rabbitmq
+        restart: always       
+        ports: 
+            - "5672:5672"
+            - "15672:15672"
+
+    contact.api:
+        container_name: contactapi
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+            - "DatabaseSettings:ConnectionString=mongodb://DirectoryMSDb:27017"
+            - "EventBus:HostName=rabbitmq"
+        depends_on:
+            - DirectoryMSDb
+            - rabbitmq
+        volumes:
+            - ${HOME}/.microsoft/usersecrets/:/root/.microsoft/usersecrets
+            - ${HOME}/.aspnet/https:/root/.aspnet/https/
+        ports:
+            - "8001:80"
+
+    person.api:
+        container_name: personapi
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Development
+            - "DatabaseSettings:ConnectionString=mongodb://DirectoryMSDb:27017"
+        depends_on:
+            - DirectoryMSDb
+        volumes:
+            - ${HOME}/.microsoft/usersecrets/:/root/.microsoft/usersecrets
+            - ${HOME}/.aspnet/https:/root/.aspnet/https/
+        ports:
+            - "8002:80"

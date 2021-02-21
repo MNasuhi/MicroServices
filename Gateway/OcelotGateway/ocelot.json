@@ -1,0 +1,76 @@
+{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/Contact",
+      "DownstreamPathScheme": "http",
+      "DownstreamPathHostAndPorts": [
+        {
+          "Host": "contactapi",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Contact",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Contact/{id}",
+      "DownstreamPathScheme": "http",
+      "DownstreamPathHostAndPorts": [
+        {
+          "Host": "contactapi",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Contact",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Contact/GetReport",
+      "DownstreamPathScheme": "http",
+      "DownstreamPathHostAndPorts": [
+        {
+          "Host": "contactapi",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Contact",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Contact/GetPersonContacts/{id}",
+      "DownstreamPathScheme": "http",
+      "DownstreamPathHostAndPorts": [
+        {
+          "Host": "contactapi",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Contact",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Person",
+      "DownstreamPathScheme": "http",
+      "DownstreamPathHostAndPorts": [
+        {
+          "Host": "personapi",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Person",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Person/{id}",
+      "DownstreamPathScheme": "http",
+      "DownstreamPathHostAndPorts": [
+        {
+          "Host": "personapi",
+          "Port": "80"
+        }
+      ],
+      "UpstreamPathTemplate": "/Person",
+      "UpstreamHttpMethod": [ "GET", "DELETE" ]
+    }
+  ]
+}
