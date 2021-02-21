@@ -17,10 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{2C2E60
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQEvent", "Common\RabbitMQEvent\RabbitMQEvent.csproj", "{D0CF79EA-E15A-4C7A-8A95-A3D1C735E571}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GateWay", "GateWay", "{E28E92EB-A262-4C91-B4A0-62F4FD0E8B91}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotGateway", "Gateway\OcelotGateway\OcelotGateway.csproj", "{ADC94F13-A464-40B3-89CF-A645C3A87AAB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,10 +39,6 @@ Global
 		{D0CF79EA-E15A-4C7A-8A95-A3D1C735E571}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0CF79EA-E15A-4C7A-8A95-A3D1C735E571}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0CF79EA-E15A-4C7A-8A95-A3D1C735E571}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ADC94F13-A464-40B3-89CF-A645C3A87AAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ADC94F13-A464-40B3-89CF-A645C3A87AAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ADC94F13-A464-40B3-89CF-A645C3A87AAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ADC94F13-A464-40B3-89CF-A645C3A87AAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,7 +47,6 @@ Global
 		{E5527E66-ED38-4369-89B5-9F4F2862CCD5} = {30C2D7CF-258D-459E-A1DB-68ACB6C97515}
 		{99BF83F3-4369-4F43-9E77-9952B5D9C19C} = {1EE42365-D919-4088-A905-1495413E4A56}
 		{D0CF79EA-E15A-4C7A-8A95-A3D1C735E571} = {2C2E6050-7CB7-494A-B5FA-AB8B64309330}
-		{ADC94F13-A464-40B3-89CF-A645C3A87AAB} = {E28E92EB-A262-4C91-B4A0-62F4FD0E8B91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F32AD747-1E3C-4C7D-8654-91A7F8E7495D}
